@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="/js/chessgame.js"></script>
+</head>
+
+<body class="bg-gray-800 text-white flex items-center justify-center h-screen">
+    <div class="w-full max-w-4xl">
+        <div class="bg-gray-900 p-8 rounded shadow-md text-center">
+            <h2 class="text-2xl mb-6">
+                <%= title %>
+            </h2>
+            <div id="playerRole" class="mb-4">Waiting for player assignment...</div>
+            <div id="chessBoard" class="mb-4">
+                <!-- Chess board UI goes here -->
+            </div>
+            <button id="restartButton"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Restart Game</button>
+        </div>
+    </div>
+</body>
+
+</html>

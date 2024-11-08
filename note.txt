@@ -1,0 +1,28 @@
+npx nodemon
+socket io should be included in both frontend and backend to be able to connect
+//frontend socket eg. code in chessgame.js
+
+socket.emit("message")
+socket.on("sabakay liya message", function(){
+    console.log("msg for all received");
+});
+
+//backend socket eg. code in index.js
+ uniquesocket.on("message",function(){
+        io.emit("sabakay liya message");
+    })
+    //for disconnection
+   uniquesocket.on("disconnect", function(){
+console.log("disconnected");
+   })  
+
+   //player who comes first will get white pieces
+   player = {
+    white:dfdvjhjfkvedkfj(id)
+    black:kfjhekfdfjdsbkf(id)
+    so after this any one will come then they will become spectator
+   }
+
+   //if any piece is moving then check the move is valid or not
+
+   //fen notation is a equation that helps to find the position if the board
